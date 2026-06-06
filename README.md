@@ -1,63 +1,146 @@
-# Marketing Ideation & Content Generator Agent (n8n + AI)
+# 💡 Marketing Ideation & Content Generator Agent (n8n + AI)
 
-An intelligent AI agent designed to generate marketing ideas, content variations, and creative directions automatically.  
-The workflow uses LLM reasoning to produce structured outputs ready for marketing teams.
+An intelligent AI-powered workflow built with **n8n** that automatically generates marketing ideas, content variations, and creative directions using Large Language Models (LLMs).
+
+The workflow helps marketing teams accelerate content creation by producing structured outputs ready for review and publishing.
 
 ---
 
 ## 🚀 Overview
-This project automates the creative ideation process:
-- Generates marketing ideas based on a given topic  
-- Produces content variations (posts, captions, angles)  
-- Classifies ideas by tone, audience, and platform  
-- Exports results to Google Sheets for team review  
+
+This project automates the creative ideation process by:
+
+- Generating marketing ideas from a given topic
+- Creating multiple content variations
+- Classifying content by audience and tone
+- Organizing results for team collaboration
+- Saving outputs directly into Google Sheets
+
+---
+
+## 📸 Workflow Preview
+
+### Main Workflow
+
+![Workflow Overview](images/Workflow.png)
 
 ---
 
 ## ✨ Key Features
-- AI-driven ideation engine  
-- Multi-format content generation  
-- Tone & audience classification  
-- Auto-save to Sheets  
-- Human-in-the-loop option  
+
+- 🤖 AI-powered ideation engine
+- 📝 Multi-format content generation
+- 🎯 Audience & tone classification
+- 📊 Automatic Google Sheets integration
+- 👥 Human-in-the-loop review option
+- ⚡ Fully automated workflow execution
 
 ---
 
 ## 🧠 Workflow Logic
-1. Input topic (manual or automated trigger)  
-2. AI Agent → generate ideas  
-3. AI Agent → rewrite into multiple formats  
-4. Categorization (tone, platform, audience)  
-5. Save to Google Sheets  
-6. Optional Slack/Email notification  
+
+```text
+Loading Data 
+      ↓
+AI Agent (Idea Generation)
+      ↓
+Content Variations
+      ↓
+Classification & Categorization
+      ↓
+Google Sheets Storage
+      ↓
+Slack / Email Notification (Optional)
+```
+
+---
+
+## 🧩 Workflow Breakdown
+
+### 1️⃣ Data Input / Loading Stage
+
+The workflow starts by receiving input data or a trigger event.
+
+![Loading Data](images/LoadingData.png)
+
+---
+
+### 2️⃣ AI Agent - Idea Generation
+
+The AI Agent generates marketing ideas based on the input topic.
+
+![AI Agent](images/AIagent.png)
+
+---
+
+### 3️⃣ AI Agent - Enhanced Processing
+
+A second AI processing stage refines and expands the generated ideas.
+
+![AI Agent 2](images/AIagent2.png)
+
+---
+
+### 4️⃣ Google Sheets Integration
+
+All generated content is structured and stored in Google Sheets for collaboration and review.
+
+![Google Sheets](images/Googelsh.png)
+
+---
+
+### 5️⃣ Workflow Overview (Final View)
+
+Complete visualization of the full automation pipeline.
+
+![Workflow](images/Workflow.png)
 
 ---
 
 ## 🛠 Tech Stack
-- n8n  
-- Gemini.Google / LLM Agents  
-- Google Sheets API  
-- Pinecone API 
-- Cohere API 
-- Prompt templates  
+
+- n8n
+- Gemini
+- Google Sheets API
+- Pinecone
+- Cohere
+- LLM Agents
+- Prompt Engineering
 
 ---
 
-## 📂 Folder Structure
+## 📂 Project Structure
 
-/workflow.json
-/assets
+```text
+.
+.
+├── images/
+│   ├── Workflow.png
+│   ├── Loading Data.png
+│   ├── AI agent.png
+│   ├── AI agent2.png
+│   ├── Googelsh.png
+│
+├── workflow.json
+└── README.md
+```
+
 ---
 
 ## ⚙️ Setup
-1. Import workflow into n8n  
-2. Add Credentials  
-3. Configure Sheets output  
-4. Run test execution  
+
+1. Import `workflow.json` into n8n
+2. Configure Gemini credentials
+3. Configure Pinecone credentials
+4. Configure Cohere credentials
+5. Configure Google Sheets credentials
+6. Run a test execution
+7. Activate the workflow
 
 ---
 
 ## 👤 Author
-Omar Sahhari  
-AI Automation & Intelligent Systems
 
+**Omar Sahhari**
+
+Data • AI & Automation Systems
